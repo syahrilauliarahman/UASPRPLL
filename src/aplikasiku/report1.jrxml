@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2a9567ab-5682-49ce-9254-27cc40915260">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from pembayaran]]>
+	</queryString>
+	<field name="id_pembayaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_booking" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_booking" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_team" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jam_masuk" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jam_keluar" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_jam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hrga_sewa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_pembayaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="uang_muka" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sisa_pembayaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="109" splitType="Stretch">
+			<image>
+				<reportElement x="16" y="7" width="122" height="94" uuid="2c055f63-ae5b-49f0-ab1e-b7e33b1756fe"/>
+				<imageExpression><![CDATA["C:\\Users\\Syahril\\Pictures\\Futsal-HQ-Logo-Design.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="232" y="22" width="279" height="29" uuid="b07671ed-4415-47eb-ab41-a24c8cd1feaa"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PEMBAYARAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="51" width="165" height="23" uuid="bb6fec36-4f5f-4811-948b-68a9185da4dc"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIVERSAL FUTSAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="74" width="384" height="20" uuid="b0fc40e7-0b35-4524-8f9c-fab4130286f5"/>
+				<text><![CDATA[Jl. Mekarsari 1 No.16 RT 04/07 Manisi - Cibiru - Bandung  Telp. 085745454548]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="101" width="752" height="1" uuid="72ed9a1d-8ac5-45fc-ae46-60d75732f5ec"/>
+			</line>
+			<line>
+				<reportElement x="0" y="104" width="752" height="1" uuid="5ba5943b-f1f5-42b4-80d5-3a8c2b81b643"/>
+			</line>
+			<line>
+				<reportElement x="0" y="107" width="752" height="1" uuid="e938aa55-f49c-4914-be58-d969ed6cd5f2"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="5" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="74" height="20" uuid="7688a20a-f51a-4715-83b8-26087f1adef5"/>
+				<text><![CDATA[id_pembayaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="2" width="54" height="20" uuid="2cecb335-f57d-4084-b7f9-6b2c3ac7a207"/>
+				<text><![CDATA[id_booking]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="2" width="59" height="20" uuid="dbf2bf3f-3077-4f55-afef-6ae74708d399"/>
+				<text><![CDATA[tgl_booking]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="2" width="70" height="20" uuid="977bc7bd-d8da-4166-b857-94d1638bc749"/>
+				<text><![CDATA[nama_team]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="257" y="2" width="59" height="20" uuid="89d524db-4ca2-446a-b027-8ebf6da7ec88"/>
+				<text><![CDATA[jam_masuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="2" width="57" height="20" uuid="61f76973-672d-4026-ad81-859ce96d9d2e"/>
+				<text><![CDATA[jam_keluar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="2" width="47" height="20" uuid="96a6f5b4-7e1c-4454-8b9c-b5d03bd81251"/>
+				<text><![CDATA[total_jam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="2" width="60" height="20" uuid="b203eff8-240e-4d54-b283-bcdb2fd59f04"/>
+				<text><![CDATA[hrga_sewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="2" width="91" height="20" uuid="de12b527-69c7-4ddc-8c7c-049b28cc0535"/>
+				<text><![CDATA[total_pembayaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="571" y="2" width="81" height="20" uuid="02c2b782-d9c0-46d7-b4f8-73df844222e9"/>
+				<text><![CDATA[uang_muka]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="652" y="2" width="100" height="20" uuid="2ef3ee44-97c3-489a-ab87-f15ecdfaf419"/>
+				<text><![CDATA[sisa_pembayaran]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="74" height="20" uuid="ccd3426b-451a-44c5-9ff5-235d1fc4566a"/>
+				<textFieldExpression><![CDATA[$F{id_pembayaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="74" y="0" width="54" height="20" uuid="f46bdf50-6af8-4d7d-90b3-80f3069318d9"/>
+				<textFieldExpression><![CDATA[$F{id_booking}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="0" width="48" height="20" uuid="74d3e321-59cd-4d93-bc01-b24436596c28"/>
+				<textFieldExpression><![CDATA[$F{tgl_booking}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="0" width="70" height="20" uuid="6510e5d2-989e-4d65-96df-76f29d45969a"/>
+				<textFieldExpression><![CDATA[$F{nama_team}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="257" y="0" width="59" height="20" uuid="3b9ca22c-9abf-4e46-b125-b3dda8d6be9f"/>
+				<textFieldExpression><![CDATA[$F{jam_masuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="57" height="20" uuid="df8357f6-2cfb-4dd6-aa2c-3cc2756aa8fd"/>
+				<textFieldExpression><![CDATA[$F{jam_keluar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="373" y="0" width="47" height="20" uuid="1430543f-7f2a-4a59-a2cb-42902da5fceb"/>
+				<textFieldExpression><![CDATA[$F{total_jam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="60" height="20" uuid="546f0e1c-f536-4447-b3bd-f93713ccda41"/>
+				<textFieldExpression><![CDATA[$F{hrga_sewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="91" height="20" uuid="344c3c8f-1698-473c-9552-03f8760dfe04"/>
+				<textFieldExpression><![CDATA[$F{total_pembayaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="571" y="0" width="81" height="20" uuid="06c7e27d-8ca2-4b5c-8e6b-7cfc7d3b671c"/>
+				<textFieldExpression><![CDATA[$F{uang_muka}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="652" y="0" width="100" height="20" uuid="7fcbfc70-789c-4552-b58b-84155816bd30"/>
+				<textFieldExpression><![CDATA[$F{sisa_pembayaran}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
